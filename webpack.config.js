@@ -22,7 +22,7 @@ module.exports = {
       verbose: true
     }),
     new HtmlWebpackPlugin({
-      title: 'template repo',
+      title: 'farm-game',
       template: './src/index.html',
       inject: 'body'
     })
@@ -46,13 +46,13 @@ module.exports = {
         },
       },
       {
-        test:/\.html$/,
+        test: /\.html$/,
         use: [
           'html-loader'
         ]
       },
-      
+
     ]
-    
+
   }
 };
